@@ -1,0 +1,5 @@
+https://github.com/aws/aws-cdk/issues/986
+
+aws cloudformation delete-stack --stack-name CDKToolkit
+aws s3 ls | grep cdktoolkit # copy the name
+aws s3 rb --force s3://cdktoolkit-stagingbucket-abcdef # replace the name here

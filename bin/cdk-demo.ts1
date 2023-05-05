@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+import 'source-map-support/register';
+import * as cdk from 'aws-cdk-lib';
+// import *  as Excel from 'exceljs';
+
+import { CdkDemoStack } from '../lib/cdk-demo-stack';
+//import { ExampleConstruct } from '../lib/MyConstruct';
+
+const app = new cdk.App();
+// const workbook = new Excel.Workbook();
+
+new CdkDemoStack(app, 'MohHomes', {
+
+
+  //env: { account: '931616079788', region: 'ap-southeast-1' },
+
+});
+//new ExampleConstruct(app,'MyConstruct',{});
+
